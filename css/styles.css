@@ -416,10 +416,11 @@ body {
   width: 206px;
   height: 80px;
 }
-.join-us-header {
+.footer-desc {
   color: var(--main-design-white);
   font-size: 14px;
   line-height: 16px;
+  font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -477,6 +478,44 @@ body {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--main-design-blue);
+}
+.newsletter-box {
+  display: flex;
+  align-items: flex-end;
+}
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter-input {
+  background-color: inherit;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.newsletter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-design-blue);
+  color: var(--main-design-white);
+  fill: var(--main-design-white);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  gap: 24px;
 }
 
 .backdrop {
