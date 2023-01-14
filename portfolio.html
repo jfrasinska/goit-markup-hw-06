@@ -342,14 +342,18 @@
               </a>
             </span>
           </div>
-          <div class="newsletter-box">
+          <div
+            id="newsletter"
+            role="group"
+            class="newsletter-box"
+            aria-labelledby="newsletter-box"
+          >
             <form class="newsletter-form">
               <label class="footer-desc" for="user_email">
                 Zapisz się do newslettera
               </label>
               <input
                 class="newsletter-input"
-                id="user_email"
                 name="user_email"
                 type="email"
                 placeholder="E-mail"
