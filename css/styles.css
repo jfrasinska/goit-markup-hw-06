@@ -608,6 +608,32 @@ body {
   transition-property: border;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.input-icon {
+  position: absolute;
+  outline: none;
+  left: 12px;
+  top: 31px;
+  fill: var(--primary-text-color);
+  transition-property: fill;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-form-input:focus + .input-icon {
+  fill: var(--main-design-blue);
+}
+.contact-form-input:focus {
+  border-color: var(--main-design-blue);
+}
+
+.contact-form-input:hover {
+  border-color: var(--main-design-blue);
+  fill: var(--main-design-blue);
+}
+
+.contact-form-input:hover + .input-icon {
+  border-color: var(--main-design-blue);
+  fill: var(--main-design-blue);
+}
+
 .contact-form-comment {
   color: var(--primary-text-color);
   position: relative;
@@ -620,21 +646,36 @@ body {
   margin-bottom: 20px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.contact-form-comment:focus,
+.contact-form-comment:hover {
+  border-color: var(--main-design-blue);
+  fill: var(--main-design-blue);
+  outline: none;
+}
+
 .checkbox-button {
+  opacity: 1;
   width: 16px;
   height: 15px;
+  margin-right: 8px;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
   position: relative;
 }
 
-.button-checkmark {
+.checkbox-button:checked + .checkbox-icon {
+  opacity: 1;
+}
+.checkbox-frame {
+  position: relative;
+}
+.checkbox-icon {
   position: absolute;
-  width: 16px;
-  height: 15px;
-  background-image: url(../images/icons.svg#icon-checkbox-modal);
-  fill: rgba(33, 33, 33, 1);
-  position: absolute;
+  fill: var(--main-design-blue);
   left: 0px;
   top: 0px;
+  opacity: 0;
+  transition-property: opacity;
 }
 .terms-text {
   color: var(--contact-form-tekst-color);
@@ -659,36 +700,4 @@ body {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.input-icon {
-  position: absolute;
-  outline: none;
-  left: 12px;
-  top: 31px;
-  fill: var(--primary-text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-form-input:focus + .input-icon {
-  fill: var(--main-design-blue);
-}
-.contact-form-input:focus {
-  border-color: var(--main-design-blue);
-}
-
-.contact-form-input:hover {
-  border-color: var(--main-design-blue);
-  fill: var(--main-design-blue);
-}
-
-.contact-form-input:hover + .input-icon {
-  border-color: var(--main-design-blue);
-  fill: var(--main-design-blue);
-}
-
-.contact-form-comment:focus,
-.contact-form-comment:hover {
-  border-color: var(--main-design-blue);
-  fill: var(--main-design-blue);
-  outline: none;
 }
