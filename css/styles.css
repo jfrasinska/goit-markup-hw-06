@@ -654,7 +654,7 @@ body {
 }
 
 .checkbox-button {
-  opacity: 1;
+  appearance: none;
   width: 16px;
   height: 15px;
   margin-right: 8px;
@@ -666,6 +666,7 @@ body {
 .checkbox-button:checked + .checkbox-icon {
   opacity: 1;
 }
+
 .checkbox-frame {
   position: relative;
 }
@@ -673,7 +674,7 @@ body {
   position: absolute;
   fill: var(--main-design-blue);
   left: 0px;
-  top: 0px;
+  top: -2px;
   opacity: 0;
   transition-property: opacity;
 }
